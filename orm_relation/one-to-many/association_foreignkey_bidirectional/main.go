@@ -55,7 +55,7 @@ func main() {
 	db.First(&user).Related(&emails, "Emails")
 	fmt.Println("emails:", emails)
 	//or
-	//db.First(&user).Association("Emails").Find(emails)
+	//db.First(&user).Association("Emails").Find(&emails)
 	//fmt.Println("emails:", emails)
 
 	// 从email导航到user
