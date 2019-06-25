@@ -8,4 +8,5 @@ Gorm的doc写得不够详细，附上例子，通过这些例子就能很好的�
 + 多态（待补充）
 
 下面引用gorm的烂文档，看你能看明白不！
+
 https://gorm.io/docs/has_many.html
