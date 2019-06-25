@@ -53,7 +53,7 @@ func main() {
 	db.First(&user).Related(&emails, "Emails")
 	fmt.Println("emails:", emails)
 	//or
-	//db.First(&user).Association("Emails").Find(emails)
+	//db.First(&user).Association("Emails").Find(&emails)
 	//fmt.Println("emails:", emails)
 
 	app.Run(iris.Addr(":8082"), iris.WithoutServerError(iris.ErrServerClosed))
